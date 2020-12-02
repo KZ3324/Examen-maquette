@@ -324,7 +324,7 @@ footer{
     #navHeader{
         height: auto;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column-reverse wrap;
         align-content: center;
     }
     #logoHeader{
@@ -333,6 +333,9 @@ footer{
         order: 2;
         margin:auto;
         position: inherit;
+    }
+    .topnav{
+        width: 80%;
     }
     #texteHeader{
         order: 1;
@@ -365,15 +368,17 @@ footer{
     #navHeader{
         height: auto;
         display: flex;
-        flex-flow: column wrap;
-        align-content: center;
+        flex-direction: row-reverse ;
+        justify-content: flex-start;
+    }
+    .topnav{
+        height: auto;
     }
     #logoHeader{
         width: 300px;
         height: 200px;
         order: 2;
-        margin:auto;
-        position: inherit;
+        position: absolute;
     }
     #texteHeader{
         order: 1;
