@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="assets/styles/css_maquette.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Interface web Statique</title>
     </head>
     <body>
@@ -18,13 +19,17 @@
             </div>
             <div id="navHeader">
                 <div id="logoHeader"><img src="assets/images/Logo_TV_2015_150.png" alt="LogoHeader"></div>
-                <div id="texteHeader">
-                    <span>Agence Web</span>
-                    <span>Création de site</span>
-                    <span>Référencement</span>
-                    <span>Webmastering et Maintenance</span>
-                    <span>Nos références</span>
-                    <span>Contact</span>
+                <div class="topnav" id="myTopnav">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#news">Agence web</a>
+                    <a href="#contact">Création de site</a>
+                    <a href="#about">Référencement</a>
+                    <a href="#about">Webmastering et Maintenance</a>
+                    <a href="#about">Nos références</a>
+                    <a href="#about">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
                 </div>
             </div>
         </header>
@@ -139,4 +144,14 @@
         </footer>
         </div>
     </body>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </html>
